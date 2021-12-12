@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = children
+        */
+        body {
+            font: normal 1em arial, helvetica, sans-serif;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+        .especial::before {
+            content: '>>';
+            font-weight: lighter;
+        }
+        .especial::after {
+            content: '<<';
+            font-weight: lighter;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            background-color: black;
+            color: #ffffff;
+            width: 300px;
+            text-align: center;
+        }
+        .link-normal {
+            text-decoration: none;
+        }
+        .link-normal::before {
+            content: '>>';
+        }
+        .link-normal::after {
+            content: '<<';
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>Para aprender HTML5  e CSS3, acesse o <a href="#">GitHub do Guanabara</a></p>
+    <p>Se quiser conhecer mais sobre os padrões, visite o site do <a href="#">Escritório do W3C no Brasil</a></p>
+    <p>Para acomanhar os cursos, acesse o <a href="#" class="especial">canal do CursoemVideo</a></p>
+
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passe o mouse aqui
+        <p>SURPRESA!!!</p>
+    </div>
+    <p>Veja o conteúdo oculto aparecendo!</p>
+
+    <h1>Outros links</h1>
+    <a href="#" class="link-normal">link 01</a><br>
+    <a href="#" class="link-normal">link 02</a><br>
+    <a href="#" class="link-normal">link 03</a>
+</body>
+</html>

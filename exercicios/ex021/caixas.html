@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: lightslategray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(65, 74, 83);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: white;
+            text-align: right;
+        }
+        nav > a{
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main {
+            background-color: rgb(65, 74, 83);
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: rgb(158, 180, 202);
+            padding: 10px;
+            margin: 10px;
+        }
+        article > aside{
+            background-color: rgb(183, 207, 231);
+        }
+        footer {
+            background-color: rgb(1, 1, 59);
+            color: lightgray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link A</a>
+            <a href="#">Link B</a>
+            <a href="#">Link C</a>
+            <a href="#">Link D</a>
+            <a href="#">Link E</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título do primeiro artigo</h2>
+                <p> Texto do primeiro artigo : Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex quidem ratione ad vitae delectus fuga minima perferendis deserunt, cum magni, nobis sit labore repellat hic suscipit illum similique minus.</p>
+            </article>
+            <article>
+                <h2>Título do Segundo artigo</h2>
+                <p>Texto do segundo artigo : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit qui, exercitationem quis inventore aliquid, beatae corrupti debitis deleniti quidem, quae adipisci eum atque cupiditate voluptatibus praesentium nemo enim impedit temporibus.</p>
+                <aside>
+                    <p>Escrito por Fulano de tal</p>
+                </aside>
+            </article>
+        </section>
+        <aside>
+            <p>Conteúdo periférico do site</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido por Hallisson Moreira</p>
+    </footer>
+</body>
+</html>

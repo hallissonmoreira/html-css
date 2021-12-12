@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* Inserindo uma fonte externa através do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Inserindo fontes externas do site dafont.com*/
+@font-face {
+    font-family: 'Christmas';
+    src: url('Christmas Squad - Personal Use.otf') format('opentype');
+    font-style: italic;
+    font-size: 1.5em;
+    /*Tipos de format(''):
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+    
+    */
+
+}
+
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    /*
+    medidas absolutas:
+    cm, mm, in, px, pt, pc.
+
+    medidas relativas:
+    em (altura em relação à fonte padrão usada, ex, rem, vw (medida de largura em relação à largura da viewport), vh (medida de altura em relação à latura da viewport)', %.
+
+    16px = 1em -> geralmente.
+
+    */
+    font-size: 14px; /* O tamanho padrão do navegador chrome é 16px*/
+    
+}
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    background-color: blue;
+}
+
+/* Seletor combinador de irmãos adjacentes -> O combinador + seleciona os nós que seguem imediatamente o elemento especificado anteriormente. 
+    Exemplo: ul + li irá corresponder a qualquer elemento <li> que segue imediatamente após um elemento <ul>.*/
+h1 + p { 
+    /* Shorthand font : font-style -> font-size -> font-weight -> font-family*/
+    font: italic 1em bold arial, monospace;
+    color: red;
+}
+
+h2 + P {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'christmas', sans-serif;
+    font-style: italic;
+    font-size: 2em;
+}
+

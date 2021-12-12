@@ -1,0 +1,25 @@
+@charset "UTF-8"; /* Regra @charset caso haja problemas com acentuação*/
+
+body {
+    background-color: lightblue;
+    color: chocolate;
+    font-size: 12pt;
+    font-family: Arial;
+}
+
+h1 {
+    background-color: blue;
+    color: goldenrod;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+p {
+    text-align: justify;
+}
+
+p.link-voltar{
+    text-align: center;
+}

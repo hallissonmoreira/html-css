@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Desafio das imagens Flexíveis</title>
+</head>
+<body>
+    <H1>Esta é a página do desafio das imagens flexíveis</h1>
+    <p>Este desafio consiste em fazer com que uma imagem se ajuste automaticamente ao tamanho da tela do navegador</p>
+
+    <p>
+        <picture>
+            <source media="(max-width: 790px)" srcset="../images/paisagem-p.png">
+            <source media="(max-width: 1250px)" srcset="../images/paisagem-m.png">
+            <img src="../images/paisagem-g.png" alt="A imagem flexível está funcionando">
+        </picture>
+    </p>
+    <p>
+        <picture>
+            <source media="(max-width: 650px)" srcset="../images/paisage-250.jpg">
+            <source media="(max-width: 1074px)" srcset="../images/paisage-600.jpg">
+            <img src="../images/paisage-full.jpg" alt="A imagem flexivel funciona">
+        </picture>
+    </p>
+
+
+    <p><a href="index.html">Voltar para a Homepage</a></p>
+
+</body>
+</html>
